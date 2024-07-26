@@ -352,3 +352,39 @@ def move(n, a, b, c):
         print(f"{a} to {c}")
         move( n - 1, b, a, c)
 move(3, 'A', 'B', 'C')
+
+#两数相加之和的练习
+class Solution:
+    def sum(self, num1: int, num2: int) -> int:
+        return num1 + num2
+solution = Solution()
+num1 = 12
+num2 = 5
+result = solution.sum(num1, num2)
+print(result)
+
+num1 = -10
+num2 = 4
+result = solution.sum(num1, num2)
+print(result)
+
+#转换温度单位的练习
+class Solution:
+    def convertTemperature(self, celsius: float) -> List[float]:
+        kelvin = celsius + 273.15
+        fahrenheit = celsius * 1.80 + 32.00
+        kelvin = round(kelvin, 2)
+        return [kelvin, fahrenheit]
+solution = Solution()
+celsius = 36.5
+result = solution.convertTemperature(celsius)
+print(result)
+
+#最小偶倍数的练习
+class Solution:
+    def smallestEvenMultiple(self, n: int) -> int:
+        if n % 2 == 0:
+            return n
+        else:
+            return n * 2
+        
